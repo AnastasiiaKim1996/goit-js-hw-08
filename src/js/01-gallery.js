@@ -30,6 +30,6 @@ function createGalleryItems(galleryItems) {
 const createLi = createGalleryItems(galleryItems);
 documentGallery.insertAdjacentHTML('beforeend', createLi);
 
-// // --- Using the standalone variant ---//
+// // --- Using the standalone variant SimpleLightbox gallery ---//
 
 new SimpleLightbox('.gallery a');
