@@ -23,24 +23,3 @@ function setCurrentTime() {
     player.setCurrentTime(localTime);
   }
 }
-
-//--- first solution ---//
-
-// function saveTime() {
-//   player
-//     .getCurrentTime()
-//     .then(function (seconds) {
-//       localStorage.setItem(STORAGE_KEY, seconds);
-//     })
-//     .catch(function (error) {
-//       console.log(error);
-//     });
-// }
-
-// player.on('timeupdate', Throttle(saveTime, 1000));
-
-// const currentTime = localStorage.getItem(STORAGE_KEY) || 0;
-
-// player.setCurrentTime(currentTime).catch(function (error) {
-//   console.log(error);
-// });
